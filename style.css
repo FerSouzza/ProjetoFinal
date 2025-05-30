@@ -129,8 +129,8 @@ nav a:hover {
 
 
 
-/* ===== TELA SEGUNDA (com degradê) ===== */
-.tela-segunda {
+/* ===== TELA SECUNDARIA ===== */
+.tela-secundaria {
   background: linear-gradient(to bottom, #000000, #01012b); /* Degradê do preto para azul */
   height: 100%;
 }
@@ -159,5 +159,93 @@ nav a:hover {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
+  width: 80%; /* opcional, para limitar a largura do texto */
+}
+
+/* ===== TELA TERCEIRA  ===== */
+.tela-terceira {
+  background: linear-gradient(to bottom, #01012b, #000000); /* Degradê do preto para azul */
+  height: 100%;
+}
+
+.texto4 {
+  position: absolute;
+  top: 2000px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  width: 80%; /* opcional, para limitar a largura do texto */
+}
+
+.simbolos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 200px;
+  flex-wrap: wrap;
+}
+
+.simbolo {
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.simbolo img {
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.simbolo .descricao {
+  opacity: 0;
+  position: fixed;
+  text-align: center;
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 20px;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.simbolo:hover img {
+  transform: translateY(-20px) scale(1.1);
+}
+
+.simbolo:hover .descricao {
+  opacity: 1;
+}
+
+
+/* ===== TELA QUATRO ===== */
+.tela-quatro {
+  background: linear-gradient(to bottom, #000000, #01012b); /* Degradê do preto para azul */
+  height: 100%;
+}
+
+.texto5 {
+  position: absolute;
+  top: 2950px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  width: 80%; /* opcional, para limitar a largura do texto */
+}
+
+.texto6 {
+  position: absolute;
+  top: 3100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 25px;
   width: 80%; /* opcional, para limitar a largura do texto */
 }
