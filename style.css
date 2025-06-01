@@ -51,7 +51,7 @@ nav a:hover {
 
 /* ===== TELA INICIAL ===== */
 .tela-inicial {
-  background: url('assets/imagem1.gif') no-repeat center center;
+  background: url('assets/Imagem1.gif') no-repeat center center;
   background-size: cover;
   height: 100vh;
   display: flex;
