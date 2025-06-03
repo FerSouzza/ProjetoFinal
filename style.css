@@ -197,3 +197,201 @@ nav a:hover {
 .texto6 ul {
   padding-left: 20px;
 }
+
+/* Tela produtos assassino */
+.assassino {
+  background: url('assets/assassino.gif') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.titulo {
+  text-align: left;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.escolha-container {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  gap: 0; /* remove qualquer espaço entre os botões */
+}
+
+.input-radio { /*esconde o botão radio*/
+  display: none;
+}
+
+/* Botões */
+.botao {
+  padding: 24px 40px;
+  font-size: 20px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: 1px solid #999;
+  border-left: none;
+}
+
+/* Remove a borda esquerda do primeiro botão para não duplicar */
+.botao:first-of-type {
+  border-left: 1px solid #999;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.botao:last-of-type {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Quando selecionado */
+#radio-assassino:checked + label,
+#radio-sobrevivente:checked + label {
+  background-color: #800000;
+  border-color: #800000;
+}
+
+
+/* SEGUNDA TELA PRODUTOS */
+.segundaprodutos {
+  background: linear-gradient(to bottom, #000000, #01012b);
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.texto7{
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+
+}
+
+.simbolos-assassino {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* alinhado à esquerda */
+  gap: 40px;
+  padding-left: 40px; /* opcional: espaçamento da borda esquerda */
+}
+
+.Sassassino {
+  text-align: left;
+  transition: transform 0.3s ease;
+  position: relative;
+  flex: 0 0 calc(33.333% - 40px); /* 3 por linha considerando o gap */
+  box-sizing: border-box;
+}
+
+.Sassassino img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.Sassassino .descricao {
+  opacity: 0;
+  position: absolute;
+  left: 0; /* alinhado à esquerda */
+  bottom: -15px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 25px;
+  width: 200px;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  text-shadow: 2px 2px 4px black;
+}
+
+.Sassassino .descricao2 {
+  opacity: 0;
+  position: absolute;
+  right: 0; /* alinhado à direita */
+  bottom: -15px;
+  color: rgb(159, 7, 7);
+  padding: 10px;
+  border-radius: 100px;
+  font-size: 25px;
+  width: 400px;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  text-shadow: 2px 2px 4px black;
+}
+
+.Sassassino:hover img {
+  transform: translateY(-10px) scale(1.1);
+}
+
+.Sassassino:hover .descricao {
+  opacity: 1;
+}
+
+.Sassassino:hover .descricao2 {
+  opacity: 1;
+}
+
+/*ESPECIFICAÇÃO DO PRODUTO*/
+
+.produto-detalhe {
+  background: url('assets/fundoproduto.png') no-repeat center center;
+  background-size: cover;
+  padding: 60px 20px;
+  min-height: 400px;
+  min-height: 100vh;
+}
+
+.detalhe-item {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* fundo leve para destacar conteúdo */
+  border-radius: 10px;
+}
+
+.detalhe-item:target {
+  display: flex;
+}
+
+.imagem-detalhe {
+  max-width: 400px;
+  height: auto;
+}
+
+.descricao-detalhe {
+  color: white;
+  max-width: 500px;
+}
+
+.descricao-detalhe h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.descricao-detalhe p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.preco {
+  font-size: 20px;
+  color: #ff5050;
+  margin-top: 15px;
+}
