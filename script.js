@@ -9,3 +9,20 @@ window.addEventListener("load", function () {
     content.style.display = "block";
   }, 1000);
 });
+
+
+
+  function selecionarLado(lado) {
+    const assassinoBtn = document.getElementById('assassinoBtn');
+    const sobreviventeBtn = document.getElementById('sobreviventeBtn');
+
+    if (lado === 'assassino') {
+      assassinoBtn.classList.add('bg-red-800');
+      sobreviventeBtn.classList.remove('bg-red-800');
+      sobreviventeBtn.classList.add('bg-transparent');
+    } else {
+      sobreviventeBtn.classList.add('bg-red-800');
+      assassinoBtn.classList.remove('bg-red-800');
+      assassinoBtn.classList.add('bg-transparent');
+    }
+  }
