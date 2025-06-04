@@ -105,7 +105,7 @@ nav a:hover {
 }
 
 .personagens {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -279,7 +279,7 @@ nav a:hover {
 
 }
 
-.simbolos-assassino {
+.simbolos-produto {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start; /* alinhado à esquerda */
@@ -287,7 +287,7 @@ nav a:hover {
   padding-left: 40px; /* opcional: espaçamento da borda esquerda */
 }
 
-.Sassassino {
+.produtos {
   text-align: left;
   transition: transform 0.3s ease;
   position: relative;
