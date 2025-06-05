@@ -1,4 +1,4 @@
-/* ===== GLOBAL ===== */
+/* ======================== GLOBAL ============================= */
 * {
   box-sizing: border-box;
 }
@@ -15,7 +15,7 @@ section {
   padding-top: 100px;
 }
 
-/* ===== MENU ===== */
+/* ==================== MENU ==================================== */
 header {
   position: fixed;
   top: 0;
@@ -49,7 +49,8 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ===== TELA INICIAL ===== */
+/*============================BACKGROUDS DAS PAGINAS=========================== */
+
 .tela-inicial {
   background: url('assets/Imagem1.gif') no-repeat center center;
   background-size: cover;
@@ -59,6 +60,52 @@ nav a:hover {
   justify-content: center;
   min-height: 100vh;
 }
+
+.sessao-promocao,
+.trabalhe-conosco,
+.lista-produtos {
+  background: linear-gradient(to bottom, #000000, #01012b);
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.sobre-nos {
+  background: linear-gradient(to bottom, #01012b, #000000);
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.assassino {
+  background: url('assets/assassino.gif') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.sobreviventes {
+  background: url('assets/meg.gif') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.produto-detalhe {
+  background: url('assets/fundoproduto.png') no-repeat center center;
+  background-size: cover;
+  padding: 60px 20px;
+  min-height: 400px;
+  min-height: 100vh;
+}
+
+/* ========================= TELA INICIAL =========================== */
 
 .logo {
   width: 1500px;
@@ -90,13 +137,8 @@ nav a:hover {
   font-size: 18px;
 }
 
-/* ===== TELA SECUNDÁRIA ===== */
-.tela-secundaria {
-  background: linear-gradient(to bottom, #000000, #01012b);
-  padding: 40px 20px;
-  text-align: center;
-  min-height: 100vh;
-}
+/* ============================== SEGUNDA SESSÃO (PROMOÇÃO) ================================ */
+
 
 .texto2 {
   text-align: left;
@@ -115,13 +157,7 @@ nav a:hover {
   margin-top: 30px;
 }
 
-/* ===== TELA TERCEIRA ===== */
-.tela-terceira {
-  background: linear-gradient(to bottom, #01012b, #000000);
-  padding: 100px 20px;
-  text-align: center;
-  min-height: 100vh;
-}
+/* =========================== TERCEIRA SESSÃO (SOBRE NÓS) =============================== */
 
 .texto4 {
   font-size: 30px;
@@ -149,7 +185,6 @@ nav a:hover {
   transition: transform 0.3s ease;
 }
 
-
 .simbolo .descricao {
   opacity: 0;
   position: absolute;
@@ -173,13 +208,7 @@ nav a:hover {
   opacity: 1;
 }
 
-/* ===== TELA QUATRO ===== */
-.tela-quatro {
-  background: linear-gradient(to bottom, #000000, #01012b);
-  padding: 100px 20px;
-  text-align: center;
-  min-height: 100vh;
-}
+/* =========================== QUARTA SESSÃO (TRABALHE CONOSCO) ============================== */
 
 .texto5 {
   font-size: 30px;
@@ -198,26 +227,9 @@ nav a:hover {
   padding-left: 20px;
 }
 
-/* Tela produtos assassino */
-.assassino {
-  background: url('assets/assassino.gif') no-repeat center center;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-}
-/* TELA PRODUTOS SOBREVIVENTES*/
-.sobreviventes {
-  background: url('assets/meg.gif') no-repeat center center;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-}
+
+
+/*==================================== PAGINA DOS PRODUTOS ===========================================*/
 
 .container {
   text-align: center;
@@ -230,7 +242,7 @@ nav a:hover {
   font-weight: bold;
   margin-bottom: 32px;
 }
-/*teste do botao */
+
 .escolha-container {
   display: flex;
   border-radius: 4px;
@@ -269,13 +281,7 @@ nav a:hover {
   border-color: #800000;
 }
 
-/* SEGUNDA TELA PRODUTOS */
-.segundaprodutos {
-  background: linear-gradient(to bottom, #000000, #01012b);
-  padding: 40px 20px;
-  text-align: center;
-  min-height: 100vh;
-}
+/* ============================== SESSÃO LISTA DE PRODUTOS =================================== */
 
 .texto7{
   font-size: 30px;
@@ -287,16 +293,16 @@ nav a:hover {
 .simbolos-produto {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* alinhado à esquerda */
+  justify-content: flex-start; 
   gap: 40px;
-  padding-left: 40px; /* opcional: espaçamento da borda esquerda */
+  padding-left: 40px; 
 }
 
 .produtos {
   text-align: left;
   transition: transform 0.3s ease;
   position: relative;
-  flex: 0 0 calc(33.333% - 40px); /* 3 por linha considerando o gap */
+  flex: 0 0 calc(33.333% - 40px); 
   box-sizing: border-box;
 }
 
@@ -310,7 +316,7 @@ nav a:hover {
 .produtos .descricao {
   opacity: 0;
   position: absolute;
-  left: 0; /* alinhado à esquerda */
+  left: 0; 
   bottom: -15px;
   color: white;
   padding: 10px;
@@ -323,15 +329,15 @@ nav a:hover {
 }
 
 .produtos .descricao2 {
-  opacity: 0;
+   opacity: 0;
   position: absolute;
-  right: 0; /* alinhado à direita */
+  left: 35%; 
   bottom: -15px;
-  color: rgb(159, 7, 7);
+  color: rgb(121, 2, 2);
   padding: 10px;
-  border-radius: 100px;
+  border-radius: 10px;
   font-size: 25px;
-  width: 250px;
+  width: 200px;
   pointer-events: none;
   transition: opacity 0.3s ease;
   text-shadow: 2px 2px 4px black;
@@ -349,15 +355,7 @@ nav a:hover {
   opacity: 1;
 }
 
-/*ESPECIFICAÇÃO DO PRODUTO*/
-
-.produto-detalhe {
-  background: url('assets/fundoproduto.png') no-repeat center center;
-  background-size: cover;
-  padding: 60px 20px;
-  min-height: 400px;
-  min-height: 100vh;
-}
+/*================================ ESPECIFICAÇÃO DO PRODUTO ==================================================*/
 
 .detalhe-item {
   display: none;
@@ -367,7 +365,7 @@ nav a:hover {
   max-width: 1000px;
   margin: 0 auto 60px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6); /* fundo leve para destacar conteúdo */
+  background-color: rgba(0, 0, 0, 0.6); 
   border-radius: 10px;
 }
 
